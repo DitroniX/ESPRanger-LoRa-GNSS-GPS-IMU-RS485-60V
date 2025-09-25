@@ -11,6 +11,9 @@
 -   25-09-25    - Preliminary Information
 -   25-09  - Alpha Testing, Schematics and Layout Topology
 
+## Availability
+
+**ESPRanger** will be beta testing late September and will be available to purchase in October 2025.
 
 ## Feature Overview
 
