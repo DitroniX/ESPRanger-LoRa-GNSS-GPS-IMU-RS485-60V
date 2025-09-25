@@ -188,7 +188,6 @@ The **ESPRanger** board main features and Outline Specifications:
     -   Memory  64kbit (8192x8)
     -   Parameter Settings
     -   Logging
-    -   Meter Readings
     -   P24C64C
 -   **TMP102 Temperature**
     -   Ambient PCB Temperature Sensor
