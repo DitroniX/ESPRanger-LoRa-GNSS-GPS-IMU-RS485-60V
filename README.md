@@ -1,5 +1,3 @@
-<meta name="google-site-verification" content="ku4yMglGLmTthuafIARrGHCC-FFy13kET4uCa3HkqAs" />
-
 ## ESPRanger, LoRa GNSS-GPS IMU RS485 Wide Operating Voltage 5-60V SDK
 
 **Supporting STEM Electronic Internet of Things & Home Automation Technology for Smart Energy Monitoring**
