@@ -149,7 +149,7 @@ An U.FL antenna connector is provided to allow internal or external antennas to 
 
 ### **IMU**
 
-A requested feature by a users is an Accelerometer and Gyroscope.   The LSM6DSLTR has been included on the board.
+A requested feature by some users is an on-board Digital Accelerometer and Gyroscope.   The LSM6DSLTR has been included on the board.
 
 This IMU is an always-on compact 3D device and offers low power but with excellent and extensive features.
 
@@ -162,7 +162,7 @@ This RS-485 interface could also be used to control local CCTV on remote install
 
 ### **Board Configuration**
 
-Two jumpers are provided, which allow you to enable/disable the power to the GNSS and/or LoRa modules.
+[Two jumpers](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V?tab=readme-ov-file#board-configuration) are provided, which allow you to enable/disable the power to the GNSS and/or LoRa modules.
 
 ### **Outline Features and Specifications**
 
@@ -171,7 +171,7 @@ The **ESPRanger** board main features and Outline Specifications:
 #### **Board**
 
 -   **Compact and Flexible Proven Design**
-    -   Only 65mm x 30mm
+    -   Only 65mm x 30mm (Pi Zero size)
     -   Fully Populated and Tested
 -   **Easy to interface and Program**
 -   **Board Jumpers for Easy 'No Solder' Configuration**
