@@ -19,16 +19,18 @@
 
 ### **What is ESPRanger?**
 
-**ESPRanger** is a compact and powerful STEM Community board which is designed for LoRa, with GNSS-GPS and IMU.
+**ESPRanger** is a compact and powerful STEM Community board which is designed for LoRa (Long Range wireless communication), with GNSS (Global Navigation Satellite System) and IMU (Accelerometer and Gyroscope).
+
+![Lora Topology Overview](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/DitroniX.net%20Lora%20Topology%20Overview.png)
 
 ### **Top Level Devices**
 
-The purpose of **ESPRanger**, is a very compact board which includes the below devices:
+The purpose of **ESPRanger**, is to provide a very compact board which includes the below features:
 
  - **Espressif ESP32-C6**
 	 - WiFi, Bluetooth, Zigbee and Thread
  - **EByte E22-900MM22S**
-	 - LoRa SX1262 module for 868 through to 915MHz
+	 - LoRa SX1262 module for 868MHz through to 915MHz
  - **ATGM336H-5N**
 	 - High performance multi-constellation GNSS receiver for GPS, Galileo, QZSS and BDS
  - **ST LSM6DSL**
@@ -47,21 +49,26 @@ The purpose of **ESPRanger**, is a very compact board which includes the below d
 
 ### **Where can ESPRanger be used?**
 
-The **ESPRanger** board can be used in a number of projects and installations such as:
+The **ESPRanger** board can be used in a wide range of projects and installations such as:
 
--   Homes
--   Education
--   Offices
+-   Automation
 -   Commercial
+-   Drones
 -   Factories
 -   Farms
 -   Greenhouses
--   Factories
+-   Homes
 -   Industry
--   Solar Farms
--   Wind Farms
+-   Makers
+-   Modelling
 -   Off Grid Systems
-
+-   Robitics
+-   Security
+-   Shipping
+-   Smart systems
+-   Solar Farms
+-   STEM Education
+-   Wind Farms
 
 ## Features (Preliminary)
 
@@ -102,11 +109,25 @@ Zigbee and mesh are expanding in an range of home, farming and industrial applic
 
 Using a mix of Ethernet and Zigbee, installations could offer remote mesh systems, with a mix of communications technologies.
 
-### **LoRa**
+### **LoRa and LoRaWAN**
 
-The main focus of the board was sensor flexibility and the ability to send this data to the outside world.  Thus the EByte E22-900MM22S LoRa module, with Semtech SX1262, is included.
+The main focus of the board was sensor flexibility and the ability to send this data to the outside world.  LoRa provides a Long Range wireless communication technology.
 
-The module covers 850 to 930MHz, so allowing the ESPRanger to work in many countries around the World.
+The **ESPRanger** includes an EByte E22-900MM22S LoRa module, with Semtech SX1262.  This module covers 850 to 930MHz, so allowing the ESPRanger to work in many countries around the World.  
+
+Example [bands](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country/):
+
+-   AS923 (AS1) band (920-923 MHz) in Japan, Malaysia, Singapore
+-   AS923 (AS2) band (915–928 MHz) in Asia
+-   AU915 band (915–928 MHz) in South America
+-   CN779 band (779-787 MHz) in China
+-   EU868 band (863–870 MHz) in Europe 
+-   IN865 band (865-867 MHz) in India
+-   KR920 band (920-923 MHz) in Korea
+-   RU864 band (864-870 MHz) in Russia
+-   US915 band (902–928 MHz) in North America
+
+LoRa networks supported include [TTN](https://www.thethingsnetwork.org/), [Helium](https://www.helium.com/iot), [Meshtastic](https://meshtastic.org/) and [ChirpStack](https://www.chirpstack.io/).
 
 An U.FL antenna connector is provided to allow internal or external antennas to be fitted.
 
@@ -135,13 +156,13 @@ This IMU is an always-on compact 3D device and offers low power but with excelle
 
 ### **RS-485**
 
-To interfacing to other Smart Meters, Devices and Smart Batteries which have an RS-485 MODBUS interface, the **ESPRanger** includes a standard industry interface which allows you to collect, or control, other devices on the RS-485 bus.
+To interfacing to other devices shich Smart Meters, Devices and Smart Batteries which have an RS-485 MODBUS interface, the **ESPRanger** includes a standard industry interface which allows you to collect, or control, other devices on the RS-485 bus.
 
 This RS-485 interface could also be used to control local CCTV on remote installations, or even send data from the **ESPRanger** board over a single twisted pair, up to around 1,200 meters (4,000 feet), in distance. Ideal for farms and remote installations.
 
 ### **Board Configuration**
 
-Two jumpers are provided, which allow you to enable/disable the power to the GNSS/GPS and/or LoRa modules.
+Two jumpers are provided, which allow you to enable/disable the power to the GNSS and/or LoRa modules.
 
 ### **Outline Features and Specifications**
 
@@ -207,7 +228,7 @@ The **ESPRanger** board main features and Outline Specifications:
 
 ### **Programming and Development**
 
-Development is primarily supported through Visual Studio Code (VSCode) and Arduino IDE. This also includes platforms like ESPHome.
+Development is primarily supported through Visual Studio Code (VSCode and PlatformIO) and Arduino IDE. This also includes platforms like Home Assistant via ESPHome.
 
 A range of libraries are already available which support the devices on the **ESPRanger** such as the:
 
