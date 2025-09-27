@@ -8,7 +8,8 @@
 
 ## Updates
 
--   25-09-25    - Preliminary Information
+-   25-09-26 - Beta boards ordered. Boards are the first layout but designed to hopefully be the final.
+-   25-09-25 - Preliminary Information
 -   25-09  - Alpha Testing, Schematics and Layout Topology
 
 ## Availability
@@ -19,13 +20,13 @@
 
 ### **What is ESPRanger?**
 
-**ESPRanger** is a compact and powerful STEM Community board which is designed for LoRa (Long Range wireless communication), with GNSS (Global Navigation Satellite System) and IMU (Accelerometer and Gyroscope).
+**ESPRanger** is a compact and powerful STEM Community board which is designed for LoRa (Long Range wireless communication), with GNSS (Global Navigation Satellite System) and IMU (Accelerometer and Gyroscope).  Essentially a great compact Swiss-army-knife LoRa GPS Tracker and IMU project.
 
 ![Lora Topology Overview](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/DitroniX.net%20Lora%20Topology%20Overview.png)
 
 ### **Top Level Devices**
 
-The purpose of **ESPRanger**, is to provide a very compact board which includes the below features:
+The purpose of **ESPRanger**, is to provide a very compact board which includes the below main features:
 
  - **Espressif ESP32-C6**
 	 - WiFi, Bluetooth, Zigbee and Thread
@@ -51,23 +52,32 @@ The purpose of **ESPRanger**, is to provide a very compact board which includes 
 
 The **ESPRanger** board can be used in a wide range of projects and installations such as:
 
+-   Agriculture
 -   Automation
 -   Commercial
 -   Drones
+-   Emergency Response
 -   Factories
 -   Farms
+-   FPV Radio Controlled Vehicles
 -   Greenhouses
 -   Homes
 -   Industry
+-   LoRa GPS Tracker
 -   Makers
+-   Mapping
 -   Modelling
 -   Off Grid Systems
--   Robitics
+-   Robotics
+-   Scientific Research
 -   Security
 -   Shipping
 -   Smart systems
 -   Solar Farms
 -   STEM Education
+-   Surveillance
+-   Surveying
+-   Tracking
 -   Wind Farms
 
 ## Features (Preliminary)
@@ -111,7 +121,7 @@ Using a mix of Ethernet and Zigbee, installations could offer remote mesh system
 
 ### **LoRa and LoRaWAN**
 
-The main focus of the board was sensor flexibility and the ability to send this data to the outside world.  LoRa provides a Long Range wireless communication technology.
+The main focus of the **ESPRanger** board was sensor flexibility and the ability to send this data to the outside world.  LoRa provides a Long Range wireless communication technology.
 
 The **ESPRanger** includes an EByte E22-900MM22S LoRa module, with Semtech SX1262.  This module covers 850 to 930MHz, so allowing the ESPRanger to work in many countries around the World.  
 
@@ -133,7 +143,7 @@ An U.FL antenna connector is provided to allow internal or external antennas to 
 
 ### **GNSS**
 
-The  ATGM336H-5NR32 is a high-performance, low-power, multi-constellation GNSS module, which features 32 tracking channels to fully support positioning and navigation via Beidou (BDS
+The  ATGM336H-5NR32 is a high-performance, low-power, multi-constellation GNSS module, which features 32 tracking channels to fully support positioning and navigation.  The **ESPRanger** supports:
 
  - American GPS
  - EU Galileo
@@ -149,7 +159,7 @@ An U.FL antenna connector is provided to allow internal or external antennas to 
 
 ### **IMU**
 
-A requested feature by some users is an on-board Digital Accelerometer and Gyroscope.   The LSM6DSLTR has been included on the board.
+A requested feature by some users is an on-board Digital Accelerometer and Gyroscope.   The LSM6DSLTR has been included on the **ESPRanger** board.
 
 This IMU is an always-on compact 3D device and offers low power but with excellent and extensive features.
 
@@ -210,18 +220,22 @@ The **ESPRanger** board main features and Outline Specifications:
     -   Parameter Settings
     -   Logging
     -   P24C64C
+    -   Two EEPROMS are on the board (ESP32-C6 and GNSS module)
 -   **TMP102 Temperature**
     -   Ambient PCB Temperature Sensor
-    
+-   **FET Output**
+    -   External control and switching
+-   **GPIO**
+    -   Single GPIO port for other interfacing.
 -   **OLED I2C Interface**
     -   I2C Interface
     -   OLED I2C Connector
-    -   Configurable Power Pins (Solder Pads)
 -   **WS2812B RGB LED**
     -   RGB Status LED
 -   **SSP9481 Onboard SMPS Board Power Supply**
     -   5V From Either Type C USB
-    -   Power taken from DC Input (4.5V to 60V)
+    -   Power taken from DC Input (Typically 4.5V to 60V)
+    -   Absolute maximum of 75V DC Input
 -   **Tactile Buttons**
     -   Reset Button
     -   User Programmable Button / PGM
@@ -232,11 +246,13 @@ Development is primarily supported through Visual Studio Code (VSCode and Platfo
 
 A range of libraries are already available which support the devices on the **ESPRanger** such as the:
 
--   ESP32-C6
--   E22-900MM22S (SX1262)
--   LSM6DSL
 -   ATGM336H
--   24C64
+-   E22-900MM22S (SX1262)
+-   EEPROM J1424C64
+-   ESP32-C6
+-   LSM6DSL
+-   OLED Display
+-   RS485
 -   TMP102
 -   WS2812
 
