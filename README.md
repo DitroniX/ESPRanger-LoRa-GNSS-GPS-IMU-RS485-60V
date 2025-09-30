@@ -8,6 +8,7 @@
 
 ## Updates
 
+-   25-09-30 - Beta boards in production.  Testing will follow and then production boards ordered mid October.
 -   25-09-26 - Beta boards ordered. Boards are the first layout but designed to hopefully be the final.
 -   25-09-25 - Preliminary Information
 -   25-09  - Alpha Testing, Schematics and Layout Topology
@@ -15,6 +16,10 @@
 ## Availability
 
 **ESPRanger** will be beta testing late September and will be available to purchase in October 2025.
+
+**Purchase Options**: Initially this will be added to [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2) and then made available on my new ditronix.net website shop, once it is complete (during October).
+
+Any queries, please contact me [github.support@ditronix.net](mailto:github.support@ditronix.net)
 
 ## Feature Overview
 
