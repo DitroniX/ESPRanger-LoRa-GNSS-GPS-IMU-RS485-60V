@@ -10,6 +10,7 @@
 
 ## Updates
 
+-   25-10-09 - Beta Boards production midway. PCBs fabricated and next stage going into SMT. Delay for China Holiday.
 -   25-09-30 - Beta boards in production.  Testing will follow and then production boards ordered mid October.
 -   25-09-26 - Beta boards ordered. Boards are the first layout but designed to hopefully be the final.
 -   25-09-25 - Preliminary Information
