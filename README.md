@@ -18,7 +18,7 @@
 
 ## Availability
 
-**ESPRanger** will be beta testing late September and will be available to purchase in October 2025.
+**ESPRanger** will be beta testing early October and will be available to purchase later in October 2025.
 
 **Purchase Options**: Initially this will be added to [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2) and then made available on my new ditronix.net website shop, once it is complete (during October).
 
