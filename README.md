@@ -147,7 +147,7 @@ Example [bands](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-cou
 
 LoRa networks supported include TTN, Helium, SkyNet Meshtastic and ChirpStack.
 
-Coverage Examples:
+#### Coverage Examples:
 
 -   [TTN](https://ttnmapper.org/heatmap/)
 -   [Helium](https://helium.coveragemap.net/heatmap/)
