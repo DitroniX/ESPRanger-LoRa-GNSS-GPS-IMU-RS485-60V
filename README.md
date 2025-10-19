@@ -145,7 +145,16 @@ Example [bands](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-cou
 -   RU864 band (864-870 MHz) in Russia
 -   US915 band (902–928 MHz) in North America
 
-LoRa networks supported include [TTN](https://www.thethingsnetwork.org/), [Helium](https://www.helium.com/iot), [Meshtastic](https://meshtastic.org/) and [ChirpStack](https://www.chirpstack.io/).
+LoRa networks supported include TTN, Helium, SkyNet Meshtastic and ChirpStack.
+
+Coverage Examples:
+
+-   [TTN](https://ttnmapper.org/heatmap/)
+-   [Helium](https://helium.coveragemap.net/heatmap/)
+-   [SkyNet](https://www.skynetiot.io/en/coverage)
+-   [ThingsIX](https://thingsix.coveragemap.net/heatmap/)
+-   [Meshtastic](https://meshmap.net/) 
+-   [Chirpstack](https://www.coveragemap.net/2024/02/28/mapping-with-chirpstack/)
 
 An U.FL antenna connector is provided to allow internal or external antennas to be fitted.
 
