@@ -18,6 +18,8 @@
 -   25-09-25 - Preliminary Information
 -   25-09  - Alpha Testing, Schematics and Layout Topology
 
+![ESPRanger Beta](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20Beta.webp?raw=true)
+
 ## Availability
 
 **ESPRanger** will be beta testing early October and will be available to purchase later in October 2025.
