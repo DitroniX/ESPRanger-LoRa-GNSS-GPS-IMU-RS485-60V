@@ -10,6 +10,8 @@
 
 ## Updates
 
+-   25-10-21 - The new ESPRanger Beta boards have arrived and in testing.  Looking and working Great!  
+	- [https://youtube.com/shorts/PW6872vrIWQ](https://youtube.com/shorts/PW6872vrIWQ)
 -   25-10-09 - Beta Boards production midway. PCBs fabricated and next stage going into SMT. Delay for China Holiday.
 -   25-09-30 - Beta boards in production.  Testing will follow and then production boards ordered mid October.
 -   25-09-26 - Beta boards ordered. Boards are the first layout but designed to hopefully be the final.
@@ -145,7 +147,7 @@ Example [bands](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-cou
 -   RU864 band (864-870 MHz) in Russia
 -   US915 band (902–928 MHz) in North America
 
-LoRa networks supported include [TTN](https://www.thethingsnetwork.org/), [Helium](https://www.helium.com/iot), [SkyNet](https://www.skynetiot.io/), [Meshtastic](https://meshtastic.org/) and [ChirpStack](https://www.chirpstack.io/).
+LoRa networks supported include [TTN](https://www.thethingsnetwork.org/), [Helium](https://www.helium.com/iot), [SkyNet](https://www.skynetiot.io/), [Meshtastic](https://meshtastic.org/) and [ChirpStack](https://www.chirpstack.io/).
 
 #### Coverage Examples:
 
@@ -153,7 +155,7 @@ LoRa networks supported include [TTN](https://www.thethingsnetwork.org/), [Hel
 -   [Helium](https://helium.coveragemap.net/heatmap/)
 -   [SkyNet](https://www.skynetiot.io/en/coverage)
 -   [ThingsIX](https://thingsix.coveragemap.net/heatmap/)
--   [Meshtastic](https://meshmap.net/) 
+-   [Meshtastic](https://meshmap.net/) 
 -   [Chirpstack](https://www.coveragemap.net/2024/02/28/mapping-with-chirpstack/)
 
 An U.FL antenna connector is provided to allow internal or external antennas to be fitted.
