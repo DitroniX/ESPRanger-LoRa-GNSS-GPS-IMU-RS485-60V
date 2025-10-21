@@ -40,6 +40,7 @@ uint16_t DelayValue = 100;  // 100
 
 // **************** OUTPUTS ****************
 #define LED_Red 22  // Red LED
+#define UART_Select  15  // UART Matrix
 
 // Hardware Serial 0 GPIO Pins
 #define RXD0 17
@@ -65,6 +66,10 @@ void setup() {
 
   // Initialise RED LED on GP22
   pinMode(LED_Red, OUTPUT);
+
+  // Initialise and Configure UART Matrix Select
+  pinMode(UART_Select, OUTPUT);  
+  digitalWrite(UART_Select, HIGH);  
 
   // Initialise DMX and Driver
   dmxSerial.begin(DMX_BAUD, DMX_FORMAT, RXLP, TXLP);

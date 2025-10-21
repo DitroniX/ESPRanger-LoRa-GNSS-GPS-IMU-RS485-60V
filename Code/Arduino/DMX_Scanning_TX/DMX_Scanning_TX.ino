@@ -43,7 +43,8 @@ uint8_t ParameterValueTo = 255;  // 0-255
 uint16_t DelayValue = 1000;  // 1000
 
 // **************** OUTPUTS ****************
-#define LED_Red 22  // Red LED
+#define LED_Red 22      // Red LED
+#define UART_Select 15  // UART Matrix
 
 // Hardware Serial 0 GPIO Pins
 #define RXD0 17
@@ -70,6 +71,10 @@ void setup() {
   // Initialise RED LED on GP22
   pinMode(LED_Red, OUTPUT);
 
+  // Initialise and Configure UART Matrix Select
+  pinMode(UART_Select, OUTPUT);
+  digitalWrite(UART_Select, HIGH);
+
   // Initialise DMX and Driver
   dmxSerial.begin(DMX_BAUD, DMX_FORMAT, RXLP, TXLP);
   dmx.begin(dmxSerial, ENLP, SelectedChannelTo);
@@ -87,7 +92,7 @@ void loop() {
     for (uint8_t ParameterValue = ParameterValueFrom; ParameterValue < (ParameterValueTo + 1); ++ParameterValue) {
 
       dmx.writeByte(ParameterValue, SelectedChannel);
-      delay(10); // Slow Devices
+      delay(10);  // Slow Devices
       dmx.update();
 
       Serial.print("DMX: Sent Parameter to Channel: ");

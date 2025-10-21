@@ -42,7 +42,8 @@
 #define ENLP 23  // RS485 UART Enable
 
 // **************** OUTPUTS ****************
-#define LED_Red 22  // Red LED
+#define LED_Red 22      // Red LED
+#define UART_Select 15  // UART Matrix
 
 // **************** FUNCTIONS AND ROUTINES ****************
 
@@ -66,6 +67,10 @@ void setup() {
 
   // Initialise RS485 UART Enable on GP23
   pinMode(ENLP, OUTPUT);
+
+  // Initialise and Configure UART Matrix Select
+  pinMode(UART_Select, OUTPUT);
+  digitalWrite(UART_Select, HIGH);
 
   // LED
   pinMode(LED_Red, OUTPUT);

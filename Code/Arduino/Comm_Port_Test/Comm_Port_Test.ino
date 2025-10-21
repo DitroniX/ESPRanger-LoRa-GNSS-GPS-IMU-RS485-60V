@@ -30,6 +30,9 @@
 #define RXLP 4
 #define TXLP 5
 
+// **************** OUTPUTS ****************
+#define UART_Select  15  // UART Matrix
+
 // **************** FUNCTIONS AND ROUTINES ****************
 
 // **************** SETUP ****************
@@ -49,6 +52,10 @@ void setup() {
   while (!Serial)
     ;
   Serial.println("");  
+
+  // Initialise and Configure UART Matrix Select
+  pinMode(UART_Select, OUTPUT);  
+  digitalWrite(UART_Select, HIGH);
 
   Serial.println("ESPRanger - Example Code");
 }

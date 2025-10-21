@@ -1,7 +1,7 @@
 /*
   Dave Williams, DitroniX 2019-2025 (ditronix.net)
 
-  Example Code, to demonstrate and test the ESPRanger TWO UART Ports Basic Test.
+  Example Code, to demonstrate and test the ESPRanger TWO UART Ports Basic RX Test.
 
   NB. To test the RS-485:
   * Simply connect another RS-485 device
@@ -31,7 +31,8 @@
 #include <Wire.h>
 
 // **************** OUTPUTS ****************
-#define LED_Red 22  // Red LED
+#define LED_Red 22      // Red LED
+#define UART_Select 15  // UART Matrix
 
 // Hardware Serial 0 pins
 #define RXD0 17
@@ -65,6 +66,10 @@ void setup() {
 
   // Initialise RED LED on GP22
   pinMode(LED_Red, OUTPUT);
+
+  // Initialise and Configure UART Matrix Select
+  pinMode(UART_Select, OUTPUT);
+  digitalWrite(UART_Select, HIGH);
 
   // Initialise RS485 UART Enable on GP23
   pinMode(ENLP, OUTPUT);

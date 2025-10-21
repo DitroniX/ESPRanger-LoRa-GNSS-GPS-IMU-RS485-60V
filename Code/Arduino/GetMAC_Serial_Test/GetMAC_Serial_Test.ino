@@ -40,10 +40,10 @@ void setup() {
 
   WiFi.mode(WIFI_MODE_STA);
 
-  Serial.print("ESPRanger MAC Address:\t");
+  Serial.print("ESPuno Pi Zero MAC Address:\t");
   Serial.println(WiFi.macAddress());
 
-  Serial.printf("ESPRanger Serial ID:\t%04X", (uint16_t)(chipid >> 32));
+  Serial.printf("ESPuno Pi Zero Serial ID:\t%04X", (uint16_t)(chipid >> 32));
   Serial.printf("%08X", (uint32_t)chipid);
   Serial.println("");
 

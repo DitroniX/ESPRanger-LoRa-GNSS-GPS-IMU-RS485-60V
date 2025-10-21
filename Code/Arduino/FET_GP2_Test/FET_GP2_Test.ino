@@ -1,9 +1,7 @@
 /*
   Dave Williams, DitroniX 2019-2025 (ditronix.net)
 
-  Example Code, to demonstrate and test the ESPRanger, RS485 RXD and TXD GPIO Basic Test.  This toggles GP5 RS-485 (B)
-
-  NB.  This test will alternate +3V3 from A to GND, to B to GND.  Proving the RS485 UART and also GPIO Driver is working.  You could then use the RS485 port as an additional GPIO is required.
+  Example Code, to demonstrate and test the ESPRanger, FET Output Test
 
   Further information, details and examples can be found on our website and also GitHub wiki pages:
   * ditronix.net
@@ -20,6 +18,7 @@
   Further information, details and examples maybe found on github.com/DitroniX
 */
 
+
 // Libraries
 
 // **************** USER VARIABLES / DEFINES / STATIC / STRUCTURES / CONSTANTS ****************
@@ -29,28 +28,24 @@
 #define TXD0 16
 
 // **************** OUTPUTS ****************
-#define RS485_TXD 5     // RS485 TXD (GP23)
-#define UART_Select 15  // UART Matrix
+#define FET 2  // FET
 
 // **************** FUNCTIONS AND ROUTINES ****************
 
 // **************** SETUP ****************
 void setup() {
+  
   // Stabalise
   delay(250);
 
-  // Initialise UART
+  // Initialise UART U0
   Serial.begin(115200, SERIAL_8N1, RXD0, TXD0);  // U0
   while (!Serial)
     ;
   Serial.println("");
 
-  // Initialise and Configure UART Matrix Select
-  pinMode(UART_Select, OUTPUT);
-  digitalWrite(UART_Select, HIGH);
-
-  // Initialise GP5
-  pinMode(RS485_TXD, OUTPUT);
+  // Initialise FET on GP2
+  pinMode(FET, OUTPUT);
 
   Serial.println("ESPRanger - Example Code");
 }
@@ -58,9 +53,10 @@ void setup() {
 // **************** LOOP ****************
 void loop() {
 
-  // Cycle RED LED
-  digitalWrite(RS485_TXD, LOW);
+  // Cycle FET
+  digitalWrite(FET, LOW);
   delay(1000);
-  digitalWrite(RS485_TXD, HIGH);
+  digitalWrite(FET, HIGH);
   delay(1000);
 }
+//
