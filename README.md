@@ -6,8 +6,11 @@
 
 ![ESPRanger Preview](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20-%20Features.png?raw=true)
 
+[![DitroniX WiKi Pages](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/GitGub%20WiKi.png?raw=true)](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/wiki)
+
 ## Updates
 
+-   25-10-09 - Beta Boards production midway. PCBs fabricated and next stage going into SMT. Delay for China Holiday.
 -   25-09-30 - Beta boards in production.  Testing will follow and then production boards ordered mid October.
 -   25-09-26 - Beta boards ordered. Boards are the first layout but designed to hopefully be the final.
 -   25-09-25 - Preliminary Information
@@ -15,7 +18,7 @@
 
 ## Availability
 
-**ESPRanger** will be beta testing late September and will be available to purchase in October 2025.
+**ESPRanger** will be beta testing early October and will be available to purchase later in October 2025.
 
 **Purchase Options**: Initially this will be added to [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2) and then made available on my new ditronix.net website shop, once it is complete (during October).
 
@@ -142,7 +145,16 @@ Example [bands](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-cou
 -   RU864 band (864-870 MHz) in Russia
 -   US915 band (902–928 MHz) in North America
 
-LoRa networks supported include [TTN](https://www.thethingsnetwork.org/), [Helium](https://www.helium.com/iot), [Meshtastic](https://meshtastic.org/) and [ChirpStack](https://www.chirpstack.io/).
+LoRa networks supported include [TTN](https://www.thethingsnetwork.org/), [Helium](https://www.helium.com/iot), [SkyNet](https://www.skynetiot.io/), [Meshtastic](https://meshtastic.org/) and [ChirpStack](https://www.chirpstack.io/).
+
+#### Coverage Examples:
+
+-   [TTN](https://ttnmapper.org/heatmap/)
+-   [Helium](https://helium.coveragemap.net/heatmap/)
+-   [SkyNet](https://www.skynetiot.io/en/coverage)
+-   [ThingsIX](https://thingsix.coveragemap.net/heatmap/)
+-   [Meshtastic](https://meshmap.net/) 
+-   [Chirpstack](https://www.coveragemap.net/2024/02/28/mapping-with-chirpstack/)
 
 An U.FL antenna connector is provided to allow internal or external antennas to be fitted.
 
