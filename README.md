@@ -10,6 +10,7 @@
 
 ## Updates
 
+-   25-10-24 - Testing complete.  Launching on KickStarter [https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6)
 -   25-10-21 - The new ESPRanger Beta boards have arrived and in testing.  Looking and working Great!  
 	- [https://youtube.com/shorts/PW6872vrIWQ](https://youtube.com/shorts/PW6872vrIWQ)
 -   25-10-09 - Beta Boards production midway. PCBs fabricated and next stage going into SMT. Delay for China Holiday.
@@ -22,9 +23,11 @@
 
 ## Availability
 
-**ESPRanger** will be beta testing early October and will be available to purchase later in October 2025.
+**ESPRanger** Launching on KickStarter [https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6)
 
-**Purchase Options**: Initially this will be added to [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2) and then made available on my new ditronix.net website shop, once it is complete (during October).
+**Purchase Options**: Initially this will available on my new ditronix.net website shop (for pre-order), once it is complete (during October).
+
+Subseqently also added [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2) 
 
 Any queries, please contact me [github.support@ditronix.net](mailto:github.support@ditronix.net)
 
