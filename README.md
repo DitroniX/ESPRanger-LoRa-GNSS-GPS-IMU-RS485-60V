@@ -4,13 +4,19 @@
 
 [**For Latest Project Updates - Click Here**](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V?tab=readme-ov-file#updates)
 
+[![Support us on KickStarter](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/KickStarter-SupportUs.png?raw=true)](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
+
+
+[Support us on KickStarter](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
+
+
 ![ESPRanger Preview](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20-%20Features.png?raw=true)
 
 [![DitroniX WiKi Pages](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/GitGub%20WiKi.png?raw=true)](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/wiki)
 
 ## Updates
 
--   25-10-24 - Testing complete.  Launching on KickStarter [https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6)
+-   25-10-24 - Testing complete.  Launching on KickStarter [https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
 -   25-10-21 - The new ESPRanger Beta boards have arrived and in testing.  Looking and working Great!  
 	- [https://youtube.com/shorts/PW6872vrIWQ](https://youtube.com/shorts/PW6872vrIWQ)
 -   25-10-09 - Beta Boards production midway. PCBs fabricated and next stage going into SMT. Delay for China Holiday.
