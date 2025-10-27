@@ -67,13 +67,14 @@ The purpose of **ESPRanger**, is to provide a very compact board which includes 
 	 -5V to 3V3 DC SMPS	 
  - **EEPROM P24C64C**
 	 -64Kbit storage
-	 -Two of these are included, one for ATGM336H and one for the ESP32-C6.
+	 -Two EEPROMs are included, one for ATGM336H and one for the ESP32-C6.
 
 ### **Where can ESPRanger be used?**
 
 The **ESPRanger** board can be used in a wide range of projects and installations such as:
 
 -   Agriculture
+-   Animal Monitoring
 -   Automation
 -   Commercial
 -   Drones
@@ -84,6 +85,7 @@ The **ESPRanger** board can be used in a wide range of projects and installation
 -   Greenhouses
 -   Homes
 -   Industry
+-   Livestock Monitoring
 -   LoRa GPS Tracker
 -   Makers
 -   Mapping
