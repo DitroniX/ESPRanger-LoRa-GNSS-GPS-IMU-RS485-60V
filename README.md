@@ -163,7 +163,19 @@ Example [bands](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-cou
 -   RU864 band (864-870 MHz) in Russia
 -   US915 band (902–928 MHz) in North America
 
-LoRa networks supported include [TTN](https://www.thethingsnetwork.org/), [Helium](https://www.helium.com/iot), [SkyNet](https://www.skynetiot.io/), [Meshtastic](https://meshtastic.org/) and [ChirpStack](https://www.chirpstack.io/).
+LoRa networks supported include [TTN](https://www.thethingsnetwork.org/), [Helium](https://www.helium.com/iot), [SkyNet](https://www.skynetiot.io/), [Meshtastic](https://meshtastic.org/), [MeshCore](https://meshcore.co.uk/) and [ChirpStack](https://www.chirpstack.io/).
+
+**LoRa Local Networks**
+
+A LoRa network can be local and self contained.  This includes 'private' networks for company or farm usage.  Examples are:
+
+ChirpStack (Open-source LoRaWAN)
+Meshtastic (Open source, Off-grid, Decentralized, Mesh network)
+MeshCore (Open source, Multi Platform System)
+
+ChirpStack is an open-source LoRaWAN Network Server, providing a private network. or an integrated network with the wider LoRaWAN such as TTN.
+
+Meshtastic provides a way to connect nodes and propagate messages across an off-gride network.
 
 #### Coverage Examples:
 
