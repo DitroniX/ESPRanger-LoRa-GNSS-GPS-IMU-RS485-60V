@@ -169,9 +169,9 @@ LoRa networks supported include [TTN](https://www.thethingsnetwork.org/), [Heliu
 
 A LoRa network can be local and self contained.  This includes 'private' networks for company or farm usage.  Examples are:
 
-ChirpStack (Open-source LoRaWAN)
-Meshtastic (Open source, Off-grid, Decentralized, Mesh network)
-MeshCore (Open source, Multi Platform System)
+-   ChirpStack (Open-source LoRaWAN)
+-   Meshtastic (Open source, Off-grid, Decentralized, Mesh network)
+-   MeshCore (Open source, Multi Platform System)
 
 ChirpStack is an open-source LoRaWAN Network Server, providing a private network. or an integrated network with the wider LoRaWAN such as TTN.
 
