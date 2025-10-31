@@ -27,6 +27,9 @@
 
 ![ESPRanger Beta](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20Beta.webp?raw=true)
 
+![ESPRanger - Topology Overview](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20-%20Topology%20Overview.png?raw=true)
+
+
 ## Availability
 
 **ESPRanger** Launching on KickStarter [https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6)
