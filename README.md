@@ -46,6 +46,8 @@ Any queries, please contact me [github.support@ditronix.net](mailto:github.suppo
 
 **ESPRanger** is a compact and powerful STEM Community board which is designed for LoRa (Long Range wireless communication), with GNSS (Global Navigation Satellite System) and IMU (Accelerometer and Gyroscope).  Essentially a great compact Swiss-army-knife LoRa GPS Tracker and IMU project.
 
+![ESPRanger](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20Hand.jpg)
+
 ![Lora Topology Overview](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/DitroniX.net%20Lora%20Topology%20Overview.png)
 
 ### **Top Level Devices**
