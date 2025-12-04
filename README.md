@@ -4,13 +4,21 @@
 
 [**For Latest Project Updates - Click Here**](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V?tab=readme-ov-file#updates)
 
+[![Support us on KickStarter](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/KickStarter-SupportUs.png?raw=true)](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
+
+
+[Support us on KickStarter](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
+
+
 ![ESPRanger Preview](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20-%20Features.png?raw=true)
 
 [![DitroniX WiKi Pages](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/GitGub%20WiKi.png?raw=true)](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/wiki)
 
 ## Updates
+-   Next: Await the backer payments, surveys and addresses. Prepare for manufacture and accessory items.  Kickstarter processes this 14 days after the campaign deadline. 
 
--   25-10-24 - Testing complete.  Launching on KickStarter [https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6)
+-   25-11-18 - The Kickstarter ESPRanger campaign successfully completed and backer surveys sent out. 
+-   25-10-24 - Testing complete.  Launching on KickStarter [https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
 -   25-10-21 - The new ESPRanger Beta boards have arrived and in testing.  Looking and working Great!  
 	- [https://youtube.com/shorts/PW6872vrIWQ](https://youtube.com/shorts/PW6872vrIWQ)
 -   25-10-09 - Beta Boards production midway. PCBs fabricated and next stage going into SMT. Delay for China Holiday.
@@ -20,6 +28,9 @@
 -   25-09  - Alpha Testing, Schematics and Layout Topology
 
 ![ESPRanger Beta](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20Beta.webp?raw=true)
+
+![ESPRanger - Topology Overview](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20-%20Topology%20Overview.png?raw=true)
+
 
 ## Availability
 
@@ -36,6 +47,8 @@ Any queries, please contact me [github.support@ditronix.net](mailto:github.suppo
 ### **What is ESPRanger?**
 
 **ESPRanger** is a compact and powerful STEM Community board which is designed for LoRa (Long Range wireless communication), with GNSS (Global Navigation Satellite System) and IMU (Accelerometer and Gyroscope).  Essentially a great compact Swiss-army-knife LoRa GPS Tracker and IMU project.
+
+![ESPRanger](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20Hand.jpg)
 
 ![Lora Topology Overview](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/DitroniX.net%20Lora%20Topology%20Overview.png)
 
@@ -61,13 +74,14 @@ The purpose of **ESPRanger**, is to provide a very compact board which includes 
 	 -5V to 3V3 DC SMPS	 
  - **EEPROM P24C64C**
 	 -64Kbit storage
-	 -Two of these are included, one for ATGM336H and one for the ESP32-C6.
+	 -Two EEPROMs are included, one for ATGM336H and one for the ESP32-C6.
 
 ### **Where can ESPRanger be used?**
 
 The **ESPRanger** board can be used in a wide range of projects and installations such as:
 
 -   Agriculture
+-   Animal Monitoring
 -   Automation
 -   Commercial
 -   Drones
@@ -78,6 +92,7 @@ The **ESPRanger** board can be used in a wide range of projects and installation
 -   Greenhouses
 -   Homes
 -   Industry
+-   Livestock Monitoring
 -   LoRa GPS Tracker
 -   Makers
 -   Mapping
@@ -152,7 +167,19 @@ Example [bands](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-cou
 -   RU864 band (864-870 MHz) in Russia
 -   US915 band (902–928 MHz) in North America
 
-LoRa networks supported include [TTN](https://www.thethingsnetwork.org/), [Helium](https://www.helium.com/iot), [SkyNet](https://www.skynetiot.io/), [Meshtastic](https://meshtastic.org/) and [ChirpStack](https://www.chirpstack.io/).
+LoRa networks supported include [TTN](https://www.thethingsnetwork.org/), [Helium](https://www.helium.com/iot), [SkyNet](https://www.skynetiot.io/), [Meshtastic](https://meshtastic.org/), [MeshCore](https://meshcore.co.uk/) and [ChirpStack](https://www.chirpstack.io/).
+
+**LoRa Local Networks**
+
+A LoRa network can be local and self contained.  This includes 'private' networks for company or farm usage.  Examples are:
+
+-   ChirpStack (Open-source LoRaWAN)
+-   Meshtastic (Open source, Off-grid, Decentralized, Mesh network)
+-   MeshCore (Open source, Multi Platform System)
+
+ChirpStack is an open-source LoRaWAN Network Server, providing a private network. or an integrated network with the wider LoRaWAN such as TTN.
+
+Meshtastic provides a way to connect nodes and propagate messages across an off-gride network.
 
 #### Coverage Examples:
 
