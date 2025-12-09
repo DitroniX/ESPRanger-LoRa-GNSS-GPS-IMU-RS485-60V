@@ -10,13 +10,15 @@
 [Support us on KickStarter](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
 
 
-![ESPRanger Preview](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20-%20Features.png?raw=true)
+![ESPRanger Overview](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20-%20Topology%20Overview.png?raw=true)
 
 [![DitroniX WiKi Pages](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/GitGub%20WiKi.png?raw=true)](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/wiki)
 
 ## Updates
--   Next: Await the backer payments, surveys and addresses. Prepare for manufacture and accessory items.  Kickstarter processes this 14 days after the campaign deadline. 
+-   Next: Test Production and Ship Out in December.
 
+-   25-12-06 - Awaiting final surveys and addresses.  In Fabrication and Production 
+-   25-11-30 - Await the backer payments, surveys and addresses. Prepare for manufacture and accessory items.  Kickstarter processes this 14 days after the campaign deadline. 
 -   25-11-18 - The Kickstarter ESPRanger campaign successfully completed and backer surveys sent out. 
 -   25-10-24 - Testing complete.  Launching on KickStarter [https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
 -   25-10-21 - The new ESPRanger Beta boards have arrived and in testing.  Looking and working Great!  
