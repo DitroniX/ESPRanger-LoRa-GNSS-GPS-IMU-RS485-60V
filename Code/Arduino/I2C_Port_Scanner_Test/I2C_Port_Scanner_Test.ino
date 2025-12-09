@@ -77,13 +77,13 @@ void ScanI2CBus()
       //   Serial.print(" PCA9671 GPIO Expander");
       //   break;
       case 0x48:
-        Serial.print(" TMP102 Temperature Sensor");
+        Serial.print(" TLA2024 12-bit ADC");
         break;
       case 0x4A:
         Serial.print(" TMP102 Temperature Sensor");
         break;
       case 0x4B:
-        Serial.print(" ADS1115 16-bit ADC IPEM PiHat");
+        Serial.print(" ADS1115 16-bit ADC");
         break;
       case 0x3C ... 0x3D:
         Serial.print(" OLED");
@@ -98,11 +98,14 @@ void ScanI2CBus()
         Serial.print(" EEPROM (Reserved Address)");
         break;
       case 0x60 ... 0x62:
-        Serial.print(" MCP4728 12-bit DAC IPEM PiHat");
+        Serial.print(" MCP4728 12-bit DAC");
         break;
       case 0x68:
         Serial.print(" DS3231 RTC IPEM PiHat");
         break;
+      case 0x6A:
+        Serial.print(" LSM6DSL IMU MEMS");
+        break;        
       case 0x71 ... 0x77:
         Serial.print(" PCA9671 GPIO Expander");
         break;

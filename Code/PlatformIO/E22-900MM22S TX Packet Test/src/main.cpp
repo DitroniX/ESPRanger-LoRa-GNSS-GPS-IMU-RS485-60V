@@ -1,7 +1,7 @@
 /*
   Dave Williams, DitroniX 2019-2025 (ditronix.net)
 
-  Example Code, to demonstrate and test the ESPRanger, TWO UART Ports Basic Test
+  Example Code, to demonstrate and test the ESPRanger - LoRa Comms TX Test
 
   Further information, details and examples can be found on our website and also GitHub wiki pages:
   * ditronix.net
@@ -19,55 +19,62 @@
 */
 
 // Libraries
+#include <RadioLib.h>
+#include <SPI.h>
 
 // **************** USER VARIABLES / DEFINES / STATIC / STRUCTURES / CONSTANTS ****************
 
-// Hardware Serial 0 GPIO Pins
-#define RXD0 17
-#define TXD0 16
+// Pin definitions
+#define SPI_MOSI 18
+#define SPI_MISO 20
+#define SPI_SCK 19
+#define SPI_CS 14
 
-// Hardware Serial 1 GPIO Pins
-#define RXLP 4
-#define TXLP 5
+#define E22_IRQ 1
+#define E22_NRST 21
+#define E22_BUSY 3
 
-// **************** OUTPUTS ****************
-#define UART_Select 15  // UART Matrix
-
-// **************** FUNCTIONS AND ROUTINES ****************
+SX1262 radio = new Module(SPI_CS, E22_IRQ, E22_NRST, E22_BUSY);
 
 // **************** SETUP ****************
-void setup() {
+void setup()
+{
+  Serial.begin(115200);
 
-  // Stabalise
-  delay(250);
+  SPI.begin(SPI_SCK, SPI_MISO, SPI_MOSI, SPI_CS);
 
-  // Initialise UART U0
-  Serial.begin(115200, SERIAL_8N1, RXD0, TXD0);  // U0
-  while (!Serial)
-    ;
-  Serial.println("");
+  Serial.print(F("\n[SX1262] Initializing ... "));
 
-  // Initialise UART U1 LP
-  Serial1.begin(9600, SERIAL_8N1, RXLP, TXLP);  //LP
-  while (!Serial)
-    ;
-  Serial.println("");
+  radio.XTAL = true;
 
-  // Initialise and Configure UART Matrix Select
-  pinMode(UART_Select, OUTPUT);
-  digitalWrite(UART_Select, HIGH);
+  int state = radio.begin(868.0);
+  if (state == RADIOLIB_ERR_NONE)
+  {
+    Serial.println(F("success!"));
+  }
+  else
+  {
+    Serial.print(F("failed, code "));
+    Serial.println(state);
+    while (true)
+    {
+      delay(10);
+    }
+  }
 
-  Serial.println("ESPRanger - Example Code");
+  Serial.print("\nSending Packet\n");
+
+  radio.setOutputPower(10);
 }
 
 // **************** LOOP ****************
-void loop() {
+void loop()
+{
+  Serial.print("\nSending Packet\n");
+  Serial.print(F("startTransmit code "));
+  int transmissionState = radio.startTransmit("Hello World!");
+  Serial.println(transmissionState);
+  Serial.println("Test End\n");
 
-  // Print to USB COM UART Port
-  Serial.println("Serial U0 (USB COM Port)");
-
-  // Print to RS-485 UART Port
-  Serial1.println("Serial LP (RS485 Port)");
-
-  delay(100);
+  delay(2000);
 }

@@ -1,7 +1,8 @@
 /*
   Dave Williams, DitroniX 2019-2025 (ditronix.net)
 
-  Example Code, to demonstrate and test the ESPRanger ADC (DC Voltage)
+  Example Code, to demonstrate and test the ESPRanger ADC (DC Voltage)12-bit Σ-Δ ADC
+  Based on https://github.com/adafruit/Adafruit_TLA202x 
 
   Further information, details and examples can be found on our website and also GitHub wiki pages:
   * ditronix.net
@@ -23,15 +24,20 @@
 */
 
 // Libraries
-#include <driver/adc.h>
+#include <Arduino.h>
+#include <Wire.h>
+#include <Adafruit_TLA202x.h>
 
 // **************** USER VARIABLES / DEFINES / STATIC / STRUCTURES / CONSTANTS ****************
 
-// Variables
-int ADC_Raw;
+Adafruit_TLA202x tla;
 
-// **************** INPUTS ****************
-#define ADC1_3_IN 3
+// Variables
+float ADC_Raw;
+
+// Define I2C (Expansion Port)
+#define I2C_SDA 6
+#define I2C_SCL 7
 
 // **************** FUNCTIONS AND ROUTINES ****************
 
@@ -46,55 +52,109 @@ void setup() {
   while (!Serial)
     ;
 
-  // Optional:  Set the resolution to 12 bits (default is 12 bits = 0-4095)
-  // analogReadResolution(12);
+  // Initialize I2C
+  Wire.begin(I2C_SDA, I2C_SCL);
 
-  // Optional: Set the resolution to 9-12 bits (default is 12 bits)
-  // analogContinuousSetWidth(12);
+  // TLA20024
+  if (!tla.begin()) {
+    Serial.println("Failed to find TLA2024 chip");
+    while (1) { delay(10); }
+  }
+  Serial.println("TLA2024 Found!");
 
-  // Optional: Set different attenuation
-  // ADC_ATTEN_DB_0 = 0 mV ~ 750 mV = Value 0
-  // ADC_ATTEN_DB_2_5 = 0 mV ~ 1050 mV = Value 1
-  // ADC_ATTEN_DB_6 = 0 mV ~ 1300 mV = Value 2
-  // ADC_ATTEN_DB_11 = 0 mV ~ 2500 mV = Value 3
-  analogContinuousSetAtten(ADC_11db);  // (default is ADC_11db = ADC_ATTEN_DB_11 = 0 mV ~2500 mV)
+  //  tla.setDataRate(TLA202x_RATE_1600_SPS);
+  Serial.print("Data rate set to: ");
+  switch (tla.getDataRate()) {
+    case TLA202x_RATE_128_SPS: Serial.println("128 SPS"); break;
+    case TLA202x_RATE_250_SPS: Serial.println("250 SPS"); break;
+    case TLA202x_RATE_490_SPS: Serial.println("490 SPS"); break;
+    case TLA202x_RATE_920_SPS: Serial.println("920 SPS"); break;
+    case TLA202x_RATE_1600_SPS: Serial.println("1600 SPS"); break;
+    case TLA202x_RATE_2400_SPS: Serial.println("2400 SPS"); break;
+    case TLA202x_RATE_3300_SPS: Serial.println("3300 SPS"); break;
+  }
+
+  // tla.setRange(TLA202x_RANGE_6_144_V);
+  Serial.print("Measurement range set to: ");
+  switch (tla.getRange()) {
+    case TLA202x_RANGE_6_144_V:
+      Serial.println("+6.144 V to -6.144 V");
+      break;
+    case TLA202x_RANGE_4_096_V:
+      Serial.println("+4.096 V to -4.096 V");
+      break;
+    case TLA202x_RANGE_2_048_V:
+      Serial.println("+2.048 V to -2.048 V");
+      break;
+    case TLA202x_RANGE_1_024_V:
+      Serial.println("+1.024 V to -1.024 V");
+      break;
+    case TLA202x_RANGE_0_512_V:
+      Serial.println("+0.512 V to -0.512 V");
+      break;
+    case TLA202x_RANGE_0_256_V:
+      Serial.println("+0.256 V to -0.256 V");
+      break;
+  }
+
+  //  tla.setMux(TLA202x_MUX_AIN0_GND);
+  Serial.print("Multiplexer set to: ");
+  switch (tla.getMux()) {
+    case TLA202x_MUX_AIN0_AIN1:
+      Serial.println("AINp = AIN 0, AINn = AIN 1");
+      break;
+    case TLA202x_MUX_AIN0_AIN3:
+      Serial.println("AINp = AIN 0, AINn = AIN 3");
+      break;
+    case TLA202x_MUX_AIN1_AIN3:
+      Serial.println("AINp = AIN 1, AINn = AIN 3");
+      break;
+    case TLA202x_MUX_AIN2_AIN3:
+      Serial.println("AINp = AIN 2, AINn = AIN 3");
+      break;
+    case TLA202x_MUX_AIN0_GND:
+      Serial.println("AINp = AIN 0, AINn = GND");
+      break;
+    case TLA202x_MUX_AIN1_GND:
+      Serial.println("AINp = AIN 1, AINn = GND");
+      break;
+    case TLA202x_MUX_AIN2_GND:
+      Serial.println("AINp = AIN 2, AINn = GND");
+      break;
+    case TLA202x_MUX_AIN3_GND:
+      Serial.println("AINp = AIN 3, AINn = GND");
+      break;
+  }
+  // tla.setMode(TLA202x_MODE_CONTINUOUS);
+  Serial.print("Reading mode: ");
+  switch (tla.getMode()) {
+    case TLA202x_MODE_ONE_SHOT: Serial.println("One-shot"); break;
+    case TLA202x_MODE_CONTINUOUS: Serial.println("Continuous"); break;
+  }
+
 
   Serial.println("ESPRanger - Example Code");
 }
 
+// **************** LOOP ****************
 void loop() {
 
-  // ESP32-C6 ADC 12-Bit SAR (Successive Approximation Register)
-  // Conversion resolution 0 - 4095 (4096)
-  // You may need to calibrate as needed.
+  Serial.print("Channel 0: ");
+  Serial.print(tla.readOnce(TLA202x_CHANNEL_0));
+  Serial.println(" Volts (VDC)");
 
-  // Read Single Analog Raw Values (non-calibrated)
-  Serial.println("\nAnalog Raw Values (non-calibrated)");
+  // Read ADC 1-3.  Remember these inputs are floating by default.
+  // Serial.print("Channel 1: ");
+  // Serial.print(tla.readOnce(TLA202x_CHANNEL_1));
+  // Serial.println(" Volts");
+  // Serial.print("Channel 2: ");
+  // Serial.print(tla.readOnce(TLA202x_CHANNEL_2));
+  // Serial.println(" Volts");
+  // Serial.print("Channel 3: ");
+  // Serial.print(tla.readOnce(TLA202x_CHANNEL_3));
+  // Serial.println(" Volts");
 
-  ADC_Raw = analogRead(ADC1_3_IN);
-  Serial.printf("ADC1_3 Analog Raw Value = %d\n", ADC_Raw);
-
-  // Read Single Analog Millivolt Values (non-calibrated)
-  Serial.println("\nMillivolt  Values  (non-calibrated)");
-
-  ADC_Raw = analogReadMilliVolts(ADC1_3_IN);
-  Serial.printf("ADC1_3 Analog mV Value = %d\n", ADC_Raw);
-
-  // Analog Millivolt Value (Averaged) - Basic Method
-  Serial.println("\nMillivolt  Value (Averaged)");
-
-  // Zero Accumulator
-  ADC_Raw = 0;
-
-  // Read ADC1_3 Input 100 times
-  for (int i = 0; i < 100; i++) {  // 100 Readings
-    ADC_Raw = ADC_Raw + analogReadMilliVolts(ADC1_3_IN);
-  }
-
-  // Divide Accumuator by Number of Readings
-  ADC_Raw = ADC_Raw / 100;
-  Serial.printf("ADC1_3 Analog Averaged mV Value = %d\n", ADC_Raw);
-
+  Serial.println("");
   Serial.println("\n----------------------------------------------------");
 
   // Loop Delay

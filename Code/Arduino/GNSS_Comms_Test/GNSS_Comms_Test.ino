@@ -1,7 +1,7 @@
 /*
   Dave Williams, DitroniX 2019-2025 (ditronix.net)
 
-  Example Code, to demonstrate and test the ESPRanger, TWO UART Ports Basic Test
+  Example Code, to demonstrate and test the ESPRanger Basic ATGM336H GNSS GPS Comms Test
 
   Further information, details and examples can be found on our website and also GitHub wiki pages:
   * ditronix.net
@@ -22,16 +22,19 @@
 
 // **************** USER VARIABLES / DEFINES / STATIC / STRUCTURES / CONSTANTS ****************
 
-// Hardware Serial 0 GPIO Pins
+#include <Wire.h>
+
+// **************** OUTPUTS ****************
+#define LED_Red 22      // Red LED
+#define UART_Select 15  // UART Matrix High=RS485  Low=GNSS
+
+// Hardware Serial 0 pins
 #define RXD0 17
 #define TXD0 16
 
-// Hardware Serial 1 GPIO Pins
+// Hardware Serial 1 pins - UART
 #define RXLP 4
 #define TXLP 5
-
-// **************** OUTPUTS ****************
-#define UART_Select 15  // UART Matrix
 
 // **************** FUNCTIONS AND ROUTINES ****************
 
@@ -41,33 +44,42 @@ void setup() {
   // Stabalise
   delay(250);
 
-  // Initialise UART U0
+  // Initialise UART 0 - USB COM Port
   Serial.begin(115200, SERIAL_8N1, RXD0, TXD0);  // U0
   while (!Serial)
     ;
-  Serial.println("");
+  Serial.println("UART 0 Opened (USB COM Port)");
 
-  // Initialise UART U1 LP
+  // Initialise UART 1 - RS485 Port
   Serial1.begin(9600, SERIAL_8N1, RXLP, TXLP);  //LP
-  while (!Serial)
+  while (!Serial1)
     ;
-  Serial.println("");
+  Serial.println("UART 1 Opened (GNSS Port)");
+
+  // Initialise RED LED on GP22
+  pinMode(LED_Red, OUTPUT);
 
   // Initialise and Configure UART Matrix Select
   pinMode(UART_Select, OUTPUT);
-  digitalWrite(UART_Select, HIGH);
+  digitalWrite(UART_Select, LOW); // GNSS ATGM336H
 
-  Serial.println("ESPRanger - Example Code");
+  Serial.println("ESPRanger - Example Code\n");
 }
 
 // **************** LOOP ****************
 void loop() {
 
-  // Print to USB COM UART Port
-  Serial.println("Serial U0 (USB COM Port)");
+  // Serial1.write("AT?");
 
-  // Print to RS-485 UART Port
-  Serial1.println("Serial LP (RS485 Port)");
+  if (Serial1.available() > 0) {
 
-  delay(100);
+    // Read Incomming Bytes from GNSS ATGM336H and Output to the Serial Monitor
+    char incomingbyte = Serial1.read();
+    Serial.print(incomingbyte);
+
+    // Heartbeat RED LED
+    digitalWrite(LED_Red, LOW);
+    delay(250);
+    digitalWrite(LED_Red, HIGH);
+  }
 }
