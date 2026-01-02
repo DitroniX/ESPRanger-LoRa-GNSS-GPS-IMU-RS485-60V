@@ -2,6 +2,8 @@
 
 **Supporting STEM Electronic Internet of Things & Home Automation Technology for Smart Energy Monitoring**
 
+![ESPRanger Boards](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20SDK%20Boards.png)
+
 [**For Latest Project Updates - Click Here**](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V?tab=readme-ov-file#updates)
 
 [![Support us on KickStarter](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/KickStarter-SupportUs.png?raw=true)](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
@@ -15,8 +17,7 @@
 [![DitroniX WiKi Pages](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/GitGub%20WiKi.png?raw=true)](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/wiki)
 
 ## Updates
--   Next: Test Production and Ship Out in December.
-
+-   26-01-02 - ESPRanger boards have arrived in stock!.  These are being tested, kitted up and in the process of shipping of Kickstarter orders from today.
 -   25-12-06 - Awaiting final surveys and addresses.  In Fabrication and Production 
 -   25-11-30 - Await the backer payments, surveys and addresses. Prepare for manufacture and accessory items.  Kickstarter processes this 14 days after the campaign deadline. 
 -   25-11-18 - The Kickstarter ESPRanger campaign successfully completed and backer surveys sent out. 
