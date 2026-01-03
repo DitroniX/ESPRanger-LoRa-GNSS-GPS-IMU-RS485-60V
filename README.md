@@ -17,6 +17,7 @@
 [![DitroniX WiKi Pages](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/GitGub%20WiKi.png?raw=true)](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/wiki)
 
 ## Updates
+-   26-01-03 - ESPRanger boards have now shipped to fulfull all Kickstarter Pledges.  Many thanks to all.  
 -   26-01-02 - ESPRanger boards have arrived in stock!.  These are being tested, kitted up and in the process of shipping of Kickstarter orders from today.
 -   25-12-06 - Awaiting final surveys and addresses.  In Fabrication and Production 
 -   25-11-30 - Await the backer payments, surveys and addresses. Prepare for manufacture and accessory items.  Kickstarter processes this 14 days after the campaign deadline. 
