@@ -63,7 +63,9 @@ The purpose of **ESPRanger**, is to provide a very compact board which includes 
  - **Espressif ESP32-C6**
 	 - WiFi, Bluetooth, Zigbee and Thread
  - **EByte E22-900MM22S**
-	 - LoRa SX1262 module for 868MHz through to 915MHz
+	 - LoRa SX1262 module for 850MHz through to 930MHz
+	 - TX 22 dBm
+	 - RX -146 dBm
  - **ATGM336H-5N**
 	 - High performance multi-constellation GNSS receiver for GPS, Galileo, QZSS and BDS
  - **ST LSM6DSL**
