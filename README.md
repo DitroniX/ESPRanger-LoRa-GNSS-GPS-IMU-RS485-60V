@@ -2,6 +2,8 @@
 
 **Supporting STEM Electronic Internet of Things & Home Automation Technology for Smart Energy Monitoring**
 
+![ESPRanger Boards](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20SDK%20Boards.png)
+
 [**For Latest Project Updates - Click Here**](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V?tab=readme-ov-file#updates)
 
 [![Support us on KickStarter](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/KickStarter-SupportUs.png?raw=true)](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
@@ -15,8 +17,8 @@
 [![DitroniX WiKi Pages](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/GitGub%20WiKi.png?raw=true)](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/wiki)
 
 ## Updates
--   Next: Test Production and Ship Out in December.
-
+-   26-01-03 - ESPRanger boards have now shipped to fulfull all Kickstarter Pledges.  Many thanks to all.  
+-   26-01-02 - ESPRanger boards have arrived in stock!.  These are being tested, kitted up and in the process of shipping of Kickstarter orders from today.
 -   25-12-06 - Awaiting final surveys and addresses.  In Fabrication and Production 
 -   25-11-30 - Await the backer payments, surveys and addresses. Prepare for manufacture and accessory items.  Kickstarter processes this 14 days after the campaign deadline. 
 -   25-11-18 - The Kickstarter ESPRanger campaign successfully completed and backer surveys sent out. 
@@ -61,7 +63,9 @@ The purpose of **ESPRanger**, is to provide a very compact board which includes 
  - **Espressif ESP32-C6**
 	 - WiFi, Bluetooth, Zigbee and Thread
  - **EByte E22-900MM22S**
-	 - LoRa SX1262 module for 868MHz through to 915MHz
+	 - LoRa SX1262 module for 850MHz through to 930MHz
+	 - TX 22 dBm
+	 - RX -146 dBm
  - **ATGM336H-5N**
 	 - High performance multi-constellation GNSS receiver for GPS, Galileo, QZSS and BDS
  - **ST LSM6DSL**
