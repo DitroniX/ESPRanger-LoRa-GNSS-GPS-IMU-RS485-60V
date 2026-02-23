@@ -2,6 +2,9 @@
 
 These Certification Documents pertain to the related Manufacturer MCU, covering both Wireless and Bluetooth RF Testing.
 
+**LoRa**
+[2ALPH-E22900M22S](https://fcc.report/FCC-ID/2ALPH-E22900M22S)
+
 
 ## **Further Information**
 
