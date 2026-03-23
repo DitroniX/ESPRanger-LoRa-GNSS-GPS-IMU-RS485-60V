@@ -19,7 +19,7 @@
 
 ## Where can ESPRanger be used?
 
-**ESPRanger** is ideal for STEM Education, Robotics, LoRa Projects, Measurements, Agriculture Projects, Makers and Hobbyists.
+**ESPRanger** is ideal for STEM Education, Robotics, LoRa Projects, Amateur Radio, Measurements, Agriculture Projects, Makers and Hobbyists.
 
 [As featured on Kickstarter](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
 
@@ -40,7 +40,7 @@
 ## Availability
 
 **ESPRanger** is available for purchase wither via:
-* ditronix.net website shop
+* ditronix.net website [shop](https://ditronix.net/)
 * [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2) 
 
 Any queries, please contact me [github.support@ditronix.net](mailto:github.support@ditronix.net)
