@@ -1,23 +1,31 @@
 ## ESPRanger, LoRa GNSS-GPS IMU RS485 Wide Operating Voltage 5-60V SDK
 
 **Supporting STEM Electronic Internet of Things & Home Automation Technology for Smart Energy Monitoring**
+[![DitroniX WiKi Pages](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/GitHub%20WiKi.png?raw=true)](https://github.com/DitroniX/AQIL-ESP32-C6-SX1262-LoRa-Air-Quality-Monitor-IoT-Weather-Station/wiki)
+
+[**For Latest Project Updates - Click Here**](https://github.com/DitroniX/AQIL-ESP32-C6-SX1262-LoRa-Air-Quality-Monitor-IoT-Weather-Station?tab=readme-ov-file#updates)
+
+**ESPRanger** is a compact, feature rich, board with a range of IoT technologies.
+* Espressif ESP32-C6 MCU
+* GNSS GPS
+* Accelerometer
+* LoRa (Semtech SX1262), module covering 850 MHz through to 930 MHz
+* RS485 Interface
+* Can be powered directly from 5-60V DC supply.
+* Compact board is the size of a Pi Zero (65mm x 30mm)
+
 
 ![ESPRanger Boards](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20SDK%20Boards.png)
 
-[**For Latest Project Updates - Click Here**](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V?tab=readme-ov-file#updates)
 
-[![Support us on KickStarter](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/KickStarter-SupportUs.png?raw=true)](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
-
-
-[Support us on KickStarter](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
+[As featured on Kickstarter](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
 
 
 ![ESPRanger Overview](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20-%20Topology%20Overview.png?raw=true)
 
-[![DitroniX WiKi Pages](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/GitGub%20WiKi.png?raw=true)](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/wiki)
-
 ## Updates
--   26-01-03 - ESPRanger boards have now shipped to fulfull all Kickstarter Pledges.  Many thanks to all.  
+-   26-01-05 - Both variants of ESPRanger, now in stock.
+-   26-01-03 - ESPRanger boards have now shipped to fulfill all Kickstarter Pledges.  Many thanks to all.  
 -   26-01-02 - ESPRanger boards have arrived in stock!.  These are being tested, kitted up and in the process of shipping of Kickstarter orders from today.
 -   25-12-06 - Awaiting final surveys and addresses.  In Fabrication and Production 
 -   25-11-30 - Await the backer payments, surveys and addresses. Prepare for manufacture and accessory items.  Kickstarter processes this 14 days after the campaign deadline. 
@@ -31,6 +39,8 @@
 -   25-09-25 - Preliminary Information
 -   25-09  - Alpha Testing, Schematics and Layout Topology
 
+## The ESPRanger Board
+
 ![ESPRanger Beta](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20Beta.webp?raw=true)
 
 ![ESPRanger - Topology Overview](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20-%20Topology%20Overview.png?raw=true)
@@ -38,11 +48,9 @@
 
 ## Availability
 
-**ESPRanger** Launching on KickStarter [https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6)
-
-**Purchase Options**: Initially this will available on my new ditronix.net website shop (for pre-order), once it is complete (during October).
-
-Subseqently also added [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2) 
+**ESPRanger** is available for purchase wither via:
+* ditronix.net website shop
+* [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2) 
 
 Any queries, please contact me [github.support@ditronix.net](mailto:github.support@ditronix.net)
 
@@ -70,7 +78,7 @@ The purpose of **ESPRanger**, is to provide a very compact board which includes 
 	 - High performance multi-constellation GNSS receiver for GPS, Galileo, QZSS and BDS
  - **ST LSM6DSL**
 	 - IMU with 3D Digital Accelerometer and 3D Digital Gyroscope
- - **Chipanalog CS48520D**
+ - **Chipanalog CS48520AD**
 	 - Industry Standard RS-485 interface
  - **TI TMP102**
 	 -Digital Temperature
@@ -116,7 +124,7 @@ The **ESPRanger** board can be used in a wide range of projects and installation
 -   Tracking
 -   Wind Farms
 
-## Features (Preliminary)
+## Features
 
 ### **Radio and U.FL**
 
@@ -175,7 +183,7 @@ Example [bands](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-cou
 
 LoRa networks supported include [TTN](https://www.thethingsnetwork.org/), [Helium](https://www.helium.com/iot), [SkyNet](https://www.skynetiot.io/), [Meshtastic](https://meshtastic.org/), [MeshCore](https://meshcore.co.uk/) and [ChirpStack](https://www.chirpstack.io/).
 
-**LoRa Local Networks**
+### LoRa Local Networks
 
 A LoRa network can be local and self contained.  This includes 'private' networks for company or farm usage.  Examples are:
 
@@ -197,6 +205,14 @@ Meshtastic provides a way to connect nodes and propagate messages across an off-
 -   [Chirpstack](https://www.coveragemap.net/2024/02/28/mapping-with-chirpstack/)
 
 An U.FL antenna connector is provided to allow internal or external antennas to be fitted.
+
+### LoRa Direct to Satellite
+
+The LoRa radio module in **ESPRanger**, operates from 850 MHz through to 930 MHz, so providing worldwide capability. This uses the LoRa module E22-900M22S, incorporating the Semtech SX1262.
+
+This LoRa Wireless includes the expanded Satellite IoT range, enabling direct-to-satellite IoT connectivity.
+
+![Lora Satellite Overview](https://github.com/DitroniX/DitroniX/blob/main/Files/DitroniX.net%20Lora%20Satellite%20Overview.png)
 
 ### **GNSS**
 
