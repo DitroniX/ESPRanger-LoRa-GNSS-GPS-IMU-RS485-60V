@@ -8,7 +8,7 @@
 
 ## What is the ESPRanger?
 
-**ESPRanger** is a compact, feature rich, board with a range of IoT technologies.
+**ESPRanger** is a compact, feature rich, SDK board with a range of IoT technologies.
 * Espressif ESP32-C6 MCU
 * GNSS GPS
 * Accelerometer
@@ -17,13 +17,20 @@
 * Can be powered directly from 5-60V DC supply.
 * Compact board is the size of a Pi Zero (65mm x 30mm)
 
+## Where can ESPRanger be used?
 
-![ESPRanger Boards](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20SDK%20Boards.png)
-
+**ESPRanger** is ideal for STEM Education, Robotics, LoRa Projects, Measurements, Agriculture Projects, Makers and Hobbyists.
 
 [As featured on Kickstarter](https://www.kickstarter.com/projects/ditronix/espranger-lora-gnss-gyro-accelerometer-rs485-esp32-c6?ref=2m69rr)
 
-## The ESPRanger Board
+## The ESPRanger Boards
+
+
+![ESPRanger Boards](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20SDK%20Boards.png)
+
+## Overview of Features
+
+
 ![ESPRanger Overview](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V/blob/main/Datasheets%20and%20Information/ESPRanger%20-%20Topology%20Overview.png?raw=true)
 
 
@@ -212,13 +219,17 @@ A dedicated EEPROM has been included to allow the module to to store the almanac
 
 An external optional plug-in CR2302 3V coin battery maybe added.
 
-An U.FL antenna connector is provided to allow internal or external antennas to be fitted.
+An U.FL antenna connector is provided to allow an internal, or external, antenna to be fitted.
 
 ### **IMU**
 
-A requested feature by some users is an on-board Digital Accelerometer and Gyroscope.   The LSM6DSLTR has been included on the **ESPRanger** board.
+A requested feature by some users is an on-board Digital Accelerometer and Gyroscope.   The low power LSM6DSLTR has been included on the **ESPRanger** board.
+
+A 3D accelerometer (or 3-axis accelerometer) is a sensor that measures acceleration, vibration, and shock in three orthogonal directions—X, Y, and Z—simultaneously.
 
 This IMU is an always-on compact 3D device and offers low power but with excellent and extensive features.
+
+The LSM6DSLTR  provides three electrical signals, one for each axis, representing the rate of speed change.  This is connected to the ESP32-C6, via I2C.
 
 
 ### **RS-485**
@@ -231,7 +242,7 @@ This RS-485 interface could also be used to control local CCTV on remote install
 
 [Two jumpers](https://github.com/DitroniX/ESPRanger-LoRa-GNSS-GPS-IMU-RS485-60V?tab=readme-ov-file#board-configuration) are provided, which allow you to enable/disable the power to the GNSS and/or LoRa modules.
 
-### **Outline Features and Specifications**
+## **Features and Specifications**
 
 The **ESPRanger** board main features and Outline Specifications:
 
@@ -246,7 +257,7 @@ The **ESPRanger** board main features and Outline Specifications:
 #### **Devices and Interfaces**
 
 -   **Espressif ESP32 C6**
-    -   ESP32-C6-MINI-1U-N4 (MHF3 Antenna Connector)
+    -   ESP32-C6-MINI-1U-N4 (IPEX U.FL MHF3 Antenna Connector)
     -   32-bit RISC-V MCU
     -   Single Core MCU up to 160 MHz
     -   Wi-Fi 6 | 2.4 GHz | 802.11ax | 802.11b/g/n
