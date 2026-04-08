@@ -94,7 +94,7 @@ void setup() {
 
   int state = radio.begin(868.0,  // frequency (MHz)
                           125.0,  // bandwidth (kHz)
-                          7,      // spreading factor
+                          9,      // spreading factor
                           5,      // coding rate
                           RADIOLIB_SX126X_SYNC_WORD_PRIVATE,
                           20,    // TX power (dBm)
